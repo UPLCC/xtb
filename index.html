@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html onclick="boon();" id="boid">
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>系统2.0</title>
+  </head>
+  <body>	
+	<h1 id="sj" class="sj">12:00</h1>
+<div id="szrj" class="szrj" onclick="if(rjdksz == 0){rjdk();}"><img src="sz.jpg" id="sztp" class="sztp"/><center><h1 id="hypertext" class="hypertext">UPLCC<color style="color:#008eff;">OS</color><br><p style="font-size:3px;color:gray">2.0.1.0.UKKCNXM</p></h1></center><div id="miu" class="miu"><h3>Xiaomi15 Ultra</h3><br><p>第四代骁龙®8移动平台</p><sub>处理器</sub></div></div>
+<div id="xbt" class="xbt" onclick="if(rjgbsz == 1){rjgb();}"></div>
+  </body>
+<style>
+ body{
+background-image: url('bz.jpg');
+}
+.sj{
+color:white;
+margin-left:50px;
+margin-top:150px;
+font-size:50px;
+}
+.sztp{
+border-radius:20px;
+width:70px;
+height:70px;
+}
+.szrj{
+width:70px;
+height:70px;
+background-color:white;
+margin-top:100px;
+margin-left:30px;
+border-radius:30px;
+}
+.hypertext{
+display:none;
+}
+.miu{
+display:none;
+border-radius:20px;
+width:90%;
+height:150px;
+margin:0 auto;
+}
+.xbt{
+width:100px;
+height:6px;
+background-color:white;
+border-radius:100px;
+position:absolute;
+bottom:1%;
+left:0;
+right:0;
+margin:0 auto;
+}
+@keyframes rjdka{
+0%{
+filer: blur(0px);
+}
+100%{
+filter: blur(3px);
+}
+}
+@keyframes rjdkb{
+0%{
+position:absolute;
+width:70px;
+height:70px;
+margin-left:30px;
+margin-top:100px;
+border-radius:30px;
+filer: blur(0px);
+font-size:1px;
+}
+100%{
+position:absolute;
+width:100vw;
+height:100vh;
+margin-left:-10px;
+margin-top:-250px;
+border-radius:30px;
+filer: blur(0px);
+font-size:15px;
+}
+}
+@keyframes rjgba{
+0%{
+filer: blur(0px);
+}
+100%{
+filter: blur(2px);
+}
+}
+@keyframes rjgbb{
+0%{
+position:absolute;
+width:100vw;
+height:100vh;
+margin-left:-10px;
+margin-top:-250px;
+border-radius:30px;
+filer: blur(0px);
+font-size:15px;
+}
+100%{
+position:absolute;
+width:70px;
+height:70px;
+margin-left:30px;
+margin-top:75px;
+border-radius:30px;
+filer: blur(0px);
+font-size:1px;
+}
+}
+@keyframes rjgbc{
+0%{
+filer: blur(0px);
+}
+100%{
+filter: blur(1px);
+}
+}
+@keyframes rjgbd{
+0%{
+position:absolute;
+width:60vw;
+height:55vh;
+margin-left:-5px;
+margin-top:-125px;
+border-radius:30px;
+filer: blur(2px);
+font-size:8px;
+}
+100%{
+position:absolute;
+width:70px;
+height:70px;
+margin-left:30px;
+margin-top:75px;
+border-radius:30px;
+filer: blur(0px);
+font-size:1px;
+}
+}
+</style>
+<script>
+dddh = 0;
+rjdksz = 0;
+rjgbsz = 0;
+sjsz = Date();
+sja = sjsz.substring(15,21);
+document.getElementById("sj").innerHTML=sja;
+function boon(){
+sjsz = Date();
+sja = sjsz.substring(15,21);
+document.getElementById("sj").innerHTML=sja;
+}
+function rjdk(){
+rjdksz = 1;
+rjgbsz = 1;
+szrj.style.animationName="rjdkb";
+szrj.style.animationDuration="0.7s";
+sztp.style.display="none";
+boid.style.animationName="rjdka";
+boid.style.animationDuration="0.7s";
+szrj.style.filter="blur(0px)";
+szrj.style.width="100vw";
+szrj.style.height="100vh";
+szrj.style.marginLeft="-10px";
+szrj.style.marginTop="-250px";
+szrj.style.borderRadius="0px";
+hypertext.style.display="block";
+sztp.style.display="none";
+hypertext.style.display="block";
+setTimeout(function (){
+miu.style.display="block";
+},100);
+miu.style.height="70px";
+setTimeout(function (){
+miu.style.height="150px";
+},500);
+dddh = 1;
+setTimeout(function (){
+dddh = 2;
+},500);
+setTimeout(function (){
+sztp.style.display="none";
+hypertext.style.display="block";
+xbt.style.backgroundColor="gray";
+},200);
+if(dddh == 2){
+setTimeout(function (){
+xbt.style.backgroundColor="gray";
+sztp.style.display="none";
+hypertext.style.display="block";
+},700);
+}
+}
+function rjgb(){
+rjdksz = 0;
+rjgbsz = 0;
+if(dddh == 2){
+szrj.style.animationName="rjgbb";
+szrj.style.animationDuration="0.7s";
+setTimeout(function (){
+sztp.style.display="block";
+},500);
+boid.style.animationName="rjgba"
+boid.style.animationDuration="0.7s";
+szrj.style.filter="blur(0px)";
+szrj.style.width="70px";
+szrj.style.height="70px";
+szrj.style.marginLeft="30px";
+szrj.style.marginTop="100px";
+szrj.style.borderRadius="30px";
+miu.style.height="0px";
+miu.style.diaplay="none";
+setTimeout(function (){
+hypertext.style.display="none";
+sztp.style.display="block";
+hypertext.style.display="none";
+miu.style.display="none";
+},500);
+setTimeout(function (){
+xbt.style.backgroundColor="white";
+hypertext.style.display="none";
+miu.style.display="none";
+},100);
+dddh = 0;
+}else{
+szrj.style.animationName="rjgbd";
+szrj.style.animationDuration="0.5s";
+setTimeout(function (){
+sztp.style.display="block";
+},250);
+boid.style.animationName="rjgbc"
+boid.style.animationDuration="0.5s";
+szrj.style.filter="blur(0px)";
+szrj.style.width="70px";
+szrj.style.height="70px";
+szrj.style.marginLeft="30px";
+szrj.style.marginTop="100px";
+szrj.style.borderRadius="30px";
+miu.style.display="none";
+setTimeout(function (){
+hypertext.style.display="none";
+sztp.style.display="block";
+hypertext.style.display="none";
+miu.style.display="none";
+},250);
+setTimeout(function (){
+xbt.style.backgroundColor="white";
+hypertext.style.display="none";
+miu.style.display="none";
+},50);
+setTimeout(function (){
+hypertext.style.display="none";
+sztp.style.display="block";
+miu.style.display="none";
+},400);
+}
+}
+</script>
+</html>
